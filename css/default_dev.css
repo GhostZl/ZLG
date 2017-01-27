@@ -28,7 +28,7 @@ html,body{ height: 100%;}*/
 
 #elapseClock {
 	text-align: right;
-	font-size: 0.7rem;
+	font-size: 2rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -36,7 +36,7 @@ html,body{ height: 100%;}*/
 #words {
 	font-family: "Microsoft Yahei";
 	width: 80vw;
-	font-size: 1rem;
+	font-size: 4rem;
 	color:#666;
 	margin:0 10vw;
 	position: absolute;
@@ -49,18 +49,18 @@ html,body{ height: 100%;}*/
 }
 #elapseClock .digit{
 	font-family: "digit";
-	font-size: 1rem;
+	font-size: 4rem;
 }
 
 #loveu{
 	padding: 5px;
-	font-size: 1rem;
+	font-size: 4rem;
 	text-align: right;
 	display: none;
 }
 
 #loveu .signature{
 	margin-top: 10px;
-	font-size: 1rem;
+	font-size: 4rem;
 	font-style: italic;
 }
