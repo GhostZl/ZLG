@@ -1,5 +1,5 @@
 var music = document.getElementById("music");
-var audio = document.getElementsByTagName("audio")[0];
+var audio = null;
 var page1 = document.getElementById("page1");
 var page2 = document.getElementById("page2");
 var page3 = document.getElementById("page3");
@@ -11,18 +11,7 @@ together.setHours(0);
 together.setMinutes(0);
 together.setSeconds(0);
 together.setMilliseconds(0);
-audio.addEventListener("ended",function(event){
-    music.className="";
-},false);
-music.addEventListener("touchstart",function(event){
-    if(audio.paused){
-        audio.play();
-        music.className="play";
-    }else{
-        audio.pause();
-        music.className="";
-    }
-},false);
+loadAudio("audio/happy.mp3",audio,music);
 page1.addEventListener("touchstart",function(event){
     page2.style.display = "block";
     page1.style.display = "none";

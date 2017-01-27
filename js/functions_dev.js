@@ -133,3 +133,24 @@ function adjustCodePosition() {
 function showLoveU() {
 	$('#loveu').fadeIn(3000);
 }
+function loadAudio(src,audio) {
+	audio = new Audio(src);
+	audio.onloadedmetadata = function(){
+		$("#page_loading").hide();
+		audio.play();
+		audio.addEventListener("ended",function(event){
+		    music.className="";
+		},false);
+		music.addEventListener("touchstart",function(event){
+		    if(audio.paused){
+		        audio.play();
+		        music.className="play";
+		    }else{
+		        audio.pause();
+		        music.className="";
+		    }
+		},false);
+	}
+	audio.src = src;
+	audio.type = "audio/mpeg";
+}
