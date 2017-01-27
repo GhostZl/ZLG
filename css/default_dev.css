@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFEE;
+	font-size:1.56vw;
+	overflow: auto;
+}
+html,body{ height: 100%;}
+#mainDiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#content{
+	margin-top:13vh;
+}
+#loveHeart {
+	float: left;
+	width:670px;
+	height:625px;
+}
+
+#garden {
+	width: 100vw;
+	height: 93.28vw;
+}
+
+#elapseClock {
+	text-align: right;
+	font-size: 0.7rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#words {
+	font-family: "Microsoft Yahei";
+	width: 80vw;
+	font-size: 1rem;
+	color:#666;
+	margin:0 10vw;
+	position: absolute;
+	bottom: 10vh;
+}
+
+#messages{
+	display: none;
+	text-align: left;
+}
+#elapseClock .digit{
+	font-family: "digit";
+	font-size: 1rem;
+}
+
+#loveu{
+	padding: 5px;
+	font-size: 1rem;
+	text-align: right;
+	display: none;
+}
+
+#loveu .signature{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-style: italic;
+}

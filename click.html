@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="css/default_dev.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+<body>
+    <div class="music">
+        <img src="img/music_pointer.png">
+        <img id="music" class="play" src="img/music_disc.png" alt="">
+    </div>
+    <div class="page" id="page1">
+        <div class="bg"></div>
+        <div class="p1_lantern">点击屏幕<br/>惊喜在后面！</div>
+        <div class="p1_immoc"></div>
+        <div class="p1_words">新春快乐</div>
+    </div>
+    <div class="page" id="page2">
+        <div class="bg p2_bg_loading"></div>
+        <div class="bg"></div>
+        <div class="p2_circle"></div>
+        <div class="p2_2016"></div>
+    </div>
+    <div class="page" id="page3">
+        <div class="bg"></div>
+        <div id="mainDiv">
+            <div id="content">
+                <div id="loveHeart">
+                    <canvas id="garden"></canvas>
+                    <div id="words">
+                        <div id="messages">
+                            猪赤, 我们相爱了
+                            <div id="elapseClock"></div>
+                        </div>
+                        <div id="loveu">
+                            永远爱你的.<br/>
+                            <div class="signature">- 大贱垒</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio autoplay="true">
+        <source src="audio/happy.mp3" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
