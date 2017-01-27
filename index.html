@@ -17,9 +17,17 @@
     <script type="text/javascript" src="js/functions_dev.js"></script>
 </head>
 <body>
-    <audio autoplay="true">
-        <source src="audio/happy.mp3" type="audio/mpeg">
-    </audio>
+    <script type="text/javascript">
+            var x, audio_src,
+                b = document.body;
+            console.log(b);
+            audio_src = "audio/happy.mp3"
+            var x = document.createElement("AUDIO");
+            x.setAttribute("src", audio_src);
+            x.setAttribute("type","audio/mpeg");
+            b.appendChild(x);
+            x.play();
+    </script>
     <div class="music">
         <img src="img/music_pointer.png">
         <img id="music" class="play" src="img/music_disc.png" alt="">
